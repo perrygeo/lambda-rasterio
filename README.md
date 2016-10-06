@@ -31,10 +31,7 @@ This Lambda handler listens for an SNS message coming from an S3 object, opens i
 
 ```
 from __future__ import print_function
-import boto3
 import rasterio
-
-s3_client = boto3.client('s3')
 
 def parse_sns(event):
     sns_message = json.loads(event['Records'][0]['Sns']['Message'])
@@ -66,5 +63,5 @@ $ s3touch --topic arn:aws:sns:us-east-1:123456789:your-sns-topic s3://landsat-pd
 
 ## potential next steps
 
-There's still parts about this that make me cringe. Testing locally is different than running on Lambda. Debugging is a pain. Uploading a 65+ MB zipfile for every change in your python file is glaringly inefficient. It might be possible to ditch the linux container if you manually downloaded all your wheel-based python modules unzipped them in the right place. Lots to explore.
+There's still parts about this that make me cringe. Testing locally is different than running on Lambda. Debugging is a pain. Uploading a 65+ MB zipfile for every change in your python file is glaringly inefficient. It might be possible to ditch the linux container if you manually downloaded all your wheel-based python modules unzipped them in the right place. Or have pip do it for you. Building the zip file on continuous integration and uploading directly to s3 would be neat. Lots to explore.
 
