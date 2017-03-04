@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventVersion": "1.0", 
+      "EventSource": "aws:sns", 
+      "EventSubscriptionArn": "arn:aws:sns:us-east-1:281300787251:ndvi:25b483b0-a5da-4128-89d8-443bb35d7656", 
+      "Sns": {
+        "MessageId": "3ed50376-aad4-5f90-a994-52425b034122", 
+        "Signature": "MikXuAR89vBQ0fDPG8Y9wSVWyphCkpmH2PGSGjNUPXqd8pbE0TRhZKGZGN8Y5mkMs0pgWcqvUdfv0UzacUU8VOFHaEpDWjCUUb6n159u6KUcgr/xhtVqs1n91S9lWiMZyGPhrmqKb9qa1wukoOqVEMa9gpdMouljPeiHcnrbZusaQivREEYeVmYekyDOUJBCu5o2dAtdZh79G4XS2dPE5FXIq55O4cKQPnEO5RpU2rX4b7yP1ZIRV1aH/yveSJt4Ffo9soRcd/O/k+gCz8GfX+dJIYSje1NJwK/KkdJapoSyZGwJ5XG4rgT7+7KoQ/Qd+4ilDhhEatRTsWoQ3xCVKQ==", 
+        "Type": "Notification", 
+        "TopicArn": "arn:aws:sns:us-east-1:281300787251:ndvi", 
+        "MessageAttributes": {}, 
+        "SignatureVersion": "1", 
+        "Timestamp": "2017-03-04T16:47:19.277Z", 
+        "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-b95095beb82e8f6a046b3aafc7f4149a.pem", 
+        "Message": "{\"Records\":[{\"eventVersion\":\"2.0\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"us-east-1\",\"eventTime\":\"2017-03-04T16:47:18.690Z\",\"eventName\":\"ObjectCreated:CompleteMultipartUpload\",\"s3\":{\"s3SchemaVersion\":\"1.0\",\"bucket\":{\"name\":\"landsat-pds\",\"arn\":\"arn:aws:s3:::landsat-pds\"},\"object\":{\"key\":\"L8/139/033/LC81390332016285LGN00/index.html\",\"size\":3780,\"eTag\":\"11688d1a2ef7021ac95619293148c2c7\"}}}]}", 
+        "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:281300787251:ndvi:25b483b0-a5da-4128-89d8-443bb35d7656", 
+        "Subject": null
+      }
+    }
+  ]
+}

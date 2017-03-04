@@ -1,2 +1,2 @@
-rasterio>=1.0a2
+rasterio>=1.0a7
 boto3

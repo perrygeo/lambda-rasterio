@@ -15,5 +15,5 @@ dist.zip: build
 	cd build && zip -r9 ../dist.zip *
 
 publish: dist.zip
-	aws s3 cp dist.zip s3://perrygeo-test/dist.zip --acl public-read
-	# https://s3.amazonaws.com/perrygeo-test/dist.zip
+	aws s3 cp dist.zip s3://perrygeo-test/ndvi_code.zip --acl public-read
+	# read at https://s3.amazonaws.com/perrygeo-test/ndvi_code.zip
